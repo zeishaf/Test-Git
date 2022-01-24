@@ -1,0 +1,83 @@
+input {
+    width: 40%;
+}
+
+label {
+    font-family: Tahoma, sans-serif;
+}
+
+h1, h2 {
+    color: red
+}
+
+div > .changecolor {
+    color: orange;
+}
+
+input [type= "text"], input [type="email"] {
+    padding: 1px 1px 2px 2px;
+    margin: 8px, 0px;
+    border: none;
+    border-bottom: 2px solid purple;
+}
+
+
+textarea{
+    border: 2px solid purple;
+}
+
+input [type="submit"] {
+    background: purple;
+    color: white;
+    width: 30%;
+}
+
+input [type="radio"] + label {
+    color: purple;
+}
+
+.transitiondiv {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: colorShift;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.transitiondiv:hover {
+    
+}
+
+
+@keyframes colorshift {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: red;
+        left: 200px;
+        top: 0;
+
+    }
+
+    50% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background: blue;
+        left: 0;
+        top: 0;
+    }
+}

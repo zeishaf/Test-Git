@@ -1,0 +1,15 @@
+
+div {
+background-color: brown; 
+display: flex;   
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+img p {
+    width: 50px 
+    background color rgb(22, 206, 145);
+    border: 2px solid red
+    padding: 20px;
+    margin: 10px
+}
